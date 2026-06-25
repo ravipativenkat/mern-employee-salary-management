@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "node --experimental-vm-modules node_modules/jest-cli/bin/jest.js"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +22,12 @@
     "mysql2": "^3.3.0",
     "nodemon": "^2.0.22",
     "sequelize": "^6.31.1"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  },
+  "jest": {
+    "transform": {}
   }
 }
